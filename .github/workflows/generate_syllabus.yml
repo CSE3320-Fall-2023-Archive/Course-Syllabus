@@ -1,4 +1,4 @@
-name: LateX CV to PDF
+name: LateX Syllabus to PDF
 
 on:
   push:
@@ -47,4 +47,15 @@ jobs:
           name: PDF
           path: PDF/Section_003_Spring_2023.pdf
           
-      
+      - name: Deploy back to gh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -n "$GITHUB_HEAD_REF" ]; then git checkout "$GITHUB_HEAD_REF"; fi
+          git config --local user.name "GitHub Actions"
+          git config --local user.email "<>"
+          git checkout main
+          git merge main
+          git add PDF/
+          git commit -m 'GitHub Actions: build site' || echo 'nothing to commit'
+          git push origin main || echo 'nothing to push'
