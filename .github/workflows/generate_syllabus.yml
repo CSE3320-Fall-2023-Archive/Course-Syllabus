@@ -23,7 +23,7 @@ jobs:
         with:
           output_dir: output
           main_latex_file: source/001/Section_001_Spring_2023.tex
-          ctan_packages: moderncv colortbl fontawesome lua-uni-algos
+          ctan_packages: moderncv colortbl fontawesome lua-uni-algos fullpage
       - name: Upload PDF to the workflow tab
         id: upload-workflow-001
         uses: actions/upload-artifact@v2
