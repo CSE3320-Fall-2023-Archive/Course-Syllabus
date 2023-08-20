@@ -19,14 +19,14 @@ jobs:
       
       - name: Compile LaTeX document 002
         id: compile-latex-document-002
-        uses: thomas-chauvet/latex2pdf-action@1.0.4
+        uses: thomas-chauvet/latex2pdf-action@1.1.0
         with:
           output_dir: PDF
           main_latex_file: source/002/Section_002_Fall_2023.tex
           ctan_packages: moderncv colortbl fontawesome lua-uni-algos fullpage preprint
          
       - name: Upload PDF to the workflow tab
-        id: upload-workflow-001
+        id: upload-workflow-002
         uses: actions/upload-artifact@v3
         with:
           name: PDF
@@ -34,7 +34,7 @@ jobs:
           
       - name: Compile LaTeX document 003
         id: compile-latex-document-003
-        uses: thomas-chauvet/latex2pdf-action@1.0.4
+        uses: thomas-chauvet/latex2pdf-action@1.1.0
         with:
           output_dir: PDF
           main_latex_file: source/003/Section_003_Fall_2023.tex
