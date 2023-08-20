@@ -26,7 +26,7 @@ jobs:
           ctan_packages: moderncv colortbl fontawesome lua-uni-algos fullpage preprint
          
       - name: Upload PDF to the workflow tab
-        id: upload-workflow-001
+        id: upload-workflow-002
         uses: actions/upload-artifact@v3
         with:
           name: PDF
