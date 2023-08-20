@@ -5,7 +5,7 @@ This is the source code for the CSE 3320 Operating Systems (Fall 2023) [course](
 
 ## Syllabus
 
-[Section 001](https://github.com/CSE3320-Spring23/Course-Syllabus/blob/main/PDF/Section_001_Spring_2023.pdf)
+[Section 002](https://github.com/CSE3320-Fall-2023/Course-Syllabus/blob/main/PDF/Section_002_Fall_2023.pdf)
 
-[Section 003](https://github.com/CSE3320-Spring23/Course-Syllabus/blob/main/PDF/Section_003_Spring_2023.pdf)
+[Section 003](https://github.com/CSE3320-Fall-2023/Course-Syllabus/blob/main/PDF/Section_003_Fall_2023.pdf)
 
